@@ -1,0 +1,9 @@
+module wire_datatype;
+  wire [7:0]a,b,c;// default wire value is 1
+  assign a = 10;
+  assign b = 20;
+ assign c = a+b;
+  initial begin
+    #1 $display("print c = %d",c); // use monitor without delay
+  end
+endmodule
