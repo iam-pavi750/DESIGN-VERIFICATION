@@ -1,0 +1,17 @@
+module function_example();
+  
+  function compare (input a,b);
+    if(a>b)
+      $display ("a is greater then b");
+    else if(a<b)
+      $display("a is less thean b");
+    else 
+      $display(" a is equal to b");
+  endfunction
+  
+  initial begin
+    compare(9,9);
+  end
+endmodule
+
+a is equal to b
