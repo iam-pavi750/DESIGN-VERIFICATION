@@ -1,0 +1,23 @@
+class home;
+  int light;
+  bit fan;
+  string switch;
+  
+  function open_electrictiy();
+    switch = "on";
+    $display("switch is %s ",switch);
+  endfunction
+  
+endclass
+
+module tb;
+  home h1;
+ 
+initial begin
+    $display("object is created or not");
+  if(h1 == null)
+    $display("object is not created");
+  else 
+    $display("object is created");
+end
+endmodule
